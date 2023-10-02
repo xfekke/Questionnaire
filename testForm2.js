@@ -13,16 +13,27 @@ let fish = 0
 const currentDate = new Date().toLocaleDateString();
 const currentTime = new Date().toLocaleTimeString();
 
+let val;
 
-console.log("Hello! What would you like to do?")
-console.log("1. Take the quiz.")
-console.log("2. See results.")
-console.log("3. Exit the program.")
-const val = prompt('Ange numret för operationen du vill utföra: ');
+while (true) {
+    console.log("Hello! What would you like to do?")
+    console.log("1. Take the quiz.")
+    console.log("2. Exit the program.")
+    
+    val = prompt('Enter the number of the option you want to choose: ');
+
+    if (val === '1' || val === '2') {
+        break; 
+    } else {
+        console.log('Invalid option. Please enter 1 or 2.');
+    }
+}
+
+let userName = ' '
 
 switch (val) {
     case '1':
-    const userName = prompt("What is your name?")
+    userName = prompt("What is your name?")
     for (let i = 0; i < data.length; i++) {
         console.log(data[i].theQuestion)
         
@@ -49,10 +60,7 @@ switch (val) {
         } while (!validInput);
     }
         break;
-    case '2': 
-        console.log(savedAnswer);
-        break;
-    case '3':
+    case '2':
         console.log("Exiting the program.")
         process.exit();
     default:
@@ -100,11 +108,3 @@ fs.writeFile('answerStored.json', JSON.stringify(newResult, null, 2), (err) => {
         console.log('Your result has been saved successfully.');
     }
 });
-
-
-
-
-
-
-
-
