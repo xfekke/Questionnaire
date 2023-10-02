@@ -96,7 +96,7 @@ fs.writeFile('answerStored.json', JSON.stringify(newResult, null, 2), (err) => {
 
 
 
-//resetta alla variabler innan de skickas till json, 
+
 
 
 
