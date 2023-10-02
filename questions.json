@@ -1,0 +1,226 @@
+[
+    {
+            "theQuestion": "Do you enjoy exercising?",
+                "dog1": 2,
+                "cat1": 1,
+                "rabbit1": 0,
+                "fish1": 0,
+                "dog2": 0,
+                "cat2": 0,
+                "rabbit2": 1,
+                "fish2": 2
+            
+    },
+    {
+    
+            "theQuestion": "Does your house have a lawn?",
+                "dog1": 2,
+                "cat1": 1,
+                "rabbit1": 0,
+                "fish1": 0,
+                "dog2": 0,
+                "cat2": 0,
+                "rabbit2": 1,
+                "fish2": 2
+            
+        
+    },
+    {
+    
+            "theQuestion": "Do you live in an apartment?",
+                "dog1": 0,
+                "cat1": 0,
+                "rabbit1": 1,
+                "fish1": 2,
+                "dog2": 2,
+                "cat2": 1,
+                "rabbit2": 0,
+                "fish2": 0
+            
+        
+    },
+    {
+    
+            "theQuestion": "Do you have a lot of freetime?",
+                "dog1": 2,
+                "cat1": 0,
+                "rabbit1": 1,
+                "fish1": 0,
+                "dog2": 0,
+                "cat2": 1,
+                "rabbit2": 0,
+                "fish2": 2
+            
+        
+    },
+    {
+
+            "theQuestion": "Do you enjoy having your pet living in a cage?",
+                "dog1": 0,
+                "cat1": 0,
+                "rabbit1": 1,
+                "fish1": 2,
+                "dog2": 2,
+                "cat2": 1,
+                "rabbit2": 0,
+                "fish2": 0
+            
+        
+    },
+    {
+     
+            "theQuestion": "Do you want to sleep next to your pet?",
+                "dog1": 1,
+                "cat1": 2,
+                "rabbit1": 0,
+                "fish1": 0,
+                "dog2": 0,
+                "cat2": 0,
+                "rabbit2": 1,
+                "fish2": 2
+            
+        
+    },
+    {
+       
+            "theQuestion": "Do you want to spend a lot of money on your pet?",
+                "dog1": 0,
+                "cat1": 1,
+                "rabbit1": 2,
+                "fish1": 1,
+                "dog2": 3,
+                "cat2": 0,
+                "rabbit2": 0,
+                "fish2": 0
+            
+        
+    },
+    {
+   
+            "theQuestion": "Do you like to travel?",
+                "dog1": 0,
+                "cat1": 1,
+                "rabbit1": 0,
+                "fish1": 2,
+                "dog2": 2,
+                "cat2": 0,
+                "rabbit2": 1,
+                "fish2": 0
+            
+        
+    },
+    {
+      
+            "theQuestion": "Do you get annoyed by furr?",
+                "dog1": 0,
+                "cat1": 0,
+                "rabbit1": 1,
+                "fish1": 2,
+                "dog2": 1,
+                "cat2": 2,
+                "rabbit2": 0,
+                "fish2": 0
+            
+        
+    },
+    {
+     
+            "theQuestion": "Do you often feel alone?",
+                "dog1": 2,
+                "cat1": 1,
+                "rabbit1": 0,
+                "fish1": 0,
+                "dog2": 0,
+                "cat2": 0,
+                "rabbit2": 1,
+                "fish2": 2
+            
+        
+    },
+    {
+    
+            "theQuestion": "Do you like big animals?",
+
+                "dog1": 2,
+                "cat1": 1,
+                "rabbit1": 0,
+                "fish1": 0,
+                "dog2": 0,
+                "cat2": 0,
+                "rabbit2": 1,
+                "fish2": 2
+            
+        
+    },
+    {
+     
+            "theQuestion": "Do you enjoy silence?",
+                "dog1": 0,
+                "cat1": 0,
+                "rabbit1": 1,
+                "fish1": 2,
+                "dog2": 2,
+                "cat2": 1,
+                "rabbit2": 0,
+                "fish2": 0
+            
+        
+    },
+    {
+    
+            "theQuestion": "Do you want unconditional love",
+                "dog1": 2,
+                "cat1": 0,
+                "rabbit1": 1,
+                "fish1": 0,
+                "dog2": 0,
+                "cat2": 2,
+                "rabbit2": 0,
+                "fish2": 1
+            
+        
+    },
+    {
+  
+            "theQuestion": "Are you easily disgusted?",
+                "dog1": 0,
+                "cat1": 0,
+                "rabbit1": 2,
+                "fish1": 1,
+                "dog2": 1,
+                "cat2": 2,
+                "rabbit2": 0,
+                "fish2": 0
+            
+        
+    },
+    {
+    
+            "theQuestion": "Are you religious?",
+                "dog1": 0,
+                "cat1": 0,
+                "rabbit1": 1,
+                "fish1": 2,
+                "dog2": 1,
+                "cat2": 2,
+                "rabbit2": 0,
+                "fish2": 0
+            
+        
+    },
+    {
+    
+            "theQuestion": "Do you like fluffy animals?",
+
+                "dog1": 0,
+                "cat1": 1,
+                "rabbit1": 2,
+                "fish1": 0,
+                "dog2": 1,
+                "cat2": 0,
+                "rabbit2": 0,
+                "fish2": 2
+            }
+        
+    
+]

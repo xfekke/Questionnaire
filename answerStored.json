@@ -1,0 +1,76 @@
+[
+  {
+    "userName": "23",
+    "date": "2023-09-29",
+    "time": "13:38:02",
+    "results": [
+      {
+        "name": "Dog",
+        "percent": 37.5
+      },
+      {
+        "name": "Fish",
+        "percent": 27.083333333333332
+      },
+      {
+        "name": "Cat",
+        "percent": 18.75
+      },
+      {
+        "name": "Rabbit",
+        "percent": 16.666666666666664
+      }
+    ]
+  },
+  [
+    {
+      "userName": "Ozzywozzy",
+      "date": "2023-09-28",
+      "time": "20:11:13",
+      "results": [
+        {
+          "name": "Dog",
+          "percent": 33.33333333333333
+        },
+        {
+          "name": "Fish",
+          "percent": 27.083333333333332
+        },
+        {
+          "name": "Rabbit",
+          "percent": 22.916666666666664
+        },
+        {
+          "name": "Cat",
+          "percent": 16.666666666666664
+        }
+      ]
+    },
+    [
+      {
+        "userName": "Sebastian",
+        "date": "2023-09-28",
+        "time": "19:57:42",
+        "results": [
+          {
+            "name": "Dog",
+            "percent": 28.57142857142857
+          },
+          {
+            "name": "Cat",
+            "percent": 24.489795918367346
+          },
+          {
+            "name": "Rabbit",
+            "percent": 24.489795918367346
+          },
+          {
+            "name": "Fish",
+            "percent": 22.448979591836736
+          }
+        ]
+      },
+      []
+    ]
+  ]
+]
