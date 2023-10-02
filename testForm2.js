@@ -13,25 +13,6 @@ let fish = 0
 const currentDate = new Date().toLocaleDateString();
 const currentTime = new Date().toLocaleTimeString();
 
-//Om answerStored.json är tom, gör en if-sats som lägger in en tom [] 
-/*
-let emptyBracket = [];
-
-if (fs.existsSync('./answerStored.json')) {
-    const data = fs.readFileSync('./answerStored.json');
-
-}
-*/
-
-//meny: Starta, avsluta och resultat.
-/*
-
-switch (val) {
-  case '1':
-  default:
-    console.log('Ogiltigt val');
-}
-*/
 
 console.log("Hello! What would you like to do?")
 console.log("1. Take the quiz.")
@@ -68,11 +49,14 @@ switch (val) {
         } while (!validInput);
     }
         break;
-    case '2': //se resultat
+    case '2': 
+        console.log(savedAnswer);
         break;
     case '3':
+        console.log("Exiting the program.")
+        process.exit();
     default:
-        console.log('Ogiltigt val');
+        console.log('Invalid option.');
 
 }
 
@@ -105,12 +89,10 @@ const result = {
     results: animals
 };
 
-
 let newResult = [];
 newResult.push(result)
 newResult.push(savedAnswer)
 
-  
 fs.writeFile('answerStored.json', JSON.stringify(newResult, null, 2), (err) => {
     if (err) {
         console.error('An error occured:', err);
@@ -118,7 +100,6 @@ fs.writeFile('answerStored.json', JSON.stringify(newResult, null, 2), (err) => {
         console.log('Your result has been saved successfully.');
     }
 });
-
 
 
 
