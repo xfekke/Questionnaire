@@ -1,7 +1,7 @@
 const data = require('./questions.json')
 const savedAnswer = require('./answerStored.json')
 
-const fs = require('fs')
+const fs = require('fs');
 const prompt = require('prompt-sync')({ sigint: true });
 
 let cat = 0
@@ -9,46 +9,62 @@ let dog = 0
 let rabbit = 0
 let fish = 0
 
-//Om answerStored.json är tom, gör en if-sats som lägger in en tom [] 
-/*
-let emptyBracket = [];
-
-if (fs.existsSync('./answerStored.json')) {
-    const data = fs.readFileSync('./answerStored.json');
-
-}
-*/
-
-const userName = prompt("What is your name?")
-
 const currentDate = new Date().toLocaleDateString();
 const currentTime = new Date().toLocaleTimeString();
 
+let val;
 
-for (let i = 0; i < data.length; i++) {
-    console.log(data[i].theQuestion)
+while (true) {
+    console.log("Hello! What would you like to do?")
+    console.log("1. Take the quiz.")
+    console.log("2. Exit the program.")
     
-    let validInput = false; 
-    
-    do {
-        let answer = parseFloat(prompt("1. Yes / 2. No"))
+    val = prompt('Enter the number of the option you want to choose: ');
+
+    if (val === '1' || val === '2') {
+        break; 
+    } else {
+        console.log('Invalid option. Please enter 1 or 2.');
+    }
+}
+
+let userName = ' '
+
+switch (val) {
+    case '1':
+    userName = prompt("What is your name?")
+    for (let i = 0; i < data.length; i++) {
+        console.log(data[i].theQuestion)
         
-        if (answer === 1) {
-            dog += data[i].dog1;
-            cat += data[i].cat1;
-            rabbit += data[i].rabbit1;
-            fish += data[i].fish1;
-            validInput = true; 
-        } else if (answer === 2) {
-            dog += data[i].dog2;
-            cat += data[i].cat2;
-            rabbit += data[i].rabbit2;
-            fish += data[i].fish2;
-            validInput = true; 
-        } else {
-            console.log("You have not entered a valid number. Please try again.");
-        }
-    } while (!validInput);
+        let validInput = false; 
+        
+        do {
+            let answer = parseFloat(prompt("1. Yes / 2. No"))
+            
+            if (answer === 1) {
+                dog += data[i].dog1;
+                cat += data[i].cat1;
+                rabbit += data[i].rabbit1;
+                fish += data[i].fish1;
+                validInput = true; 
+            } else if (answer === 2) {
+                dog += data[i].dog2;
+                cat += data[i].cat2;
+                rabbit += data[i].rabbit2;
+                fish += data[i].fish2;
+                validInput = true; 
+            } else {
+                console.log("You have not entered a valid number. Please try again.");
+            }
+        } while (!validInput);
+    }
+        break;
+    case '2':
+        console.log("Exiting the program.")
+        process.exit();
+    default:
+        console.log('Invalid option.');
+
 }
 
 const totalPoints = cat + dog + rabbit + fish;
@@ -80,12 +96,10 @@ const result = {
     results: animals
 };
 
-
 let newResult = [];
 newResult.push(result)
 newResult.push(savedAnswer)
 
-  
 fs.writeFile('answerStored.json', JSON.stringify(newResult, null, 2), (err) => {
     if (err) {
         console.error('An error occured:', err);
@@ -93,13 +107,3 @@ fs.writeFile('answerStored.json', JSON.stringify(newResult, null, 2), (err) => {
         console.log('Your result has been saved successfully.');
     }
 });
-
-
-
-
-
-
-
-
-
-
